@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+  <html ng-app="meuApp" ng-controller="meuCtrl">
+  <head>
+  <link rel="stylesheet" type="text/css" href="sitio.css">
+  <meta charset="UTF-8">
+  <title ng-model="titulo1">Sítio Pinheiros</title>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+  <script src="script.js"></script>
+  </head>
+<body style="background-color: #FFFFE0;">
+      
+  <h1 ng-model="galeria">{{galeria}}</h1>
+  
+  <div class="galeria">
+     <div class="img" ng-repeat="x in imagens">
+     <img src="{{x.img}}" alt="{{x.alt}}" width="280" height="250" class="src">
+     </div>
+   </div>
+  
+
+   <footer>
+  <p>Criado por: Filipe Tavares Macedo</p>
+  <p>Email: <a href="ftm321@gmail.com">ftm321@gmail.com</a>.</p>
+</footer>
+</body>
+</html>
